@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ROYAL LEGACY BY AHADULMEHDI - Royal Oud</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>ROYAL LEGACY BY AHADULMEHDI</h1>
+      <p class="tagline">Luxury Fragrances for the Elite</p>
+    </header>
+
+    <main>
+      <div class="product-details">
+        <div class="product-images">
+          <img src="images/royal-oud-1.jpg" alt="Royal Oud" class="main-image">
+          <div class="thumbnail-container">
+            <img src="images/royal-oud-1.jpg" alt="Thumbnail 1" class="thumbnail" onclick="changeImage('images/royal-oud-1.jpg')">
+            <img src="images/royal-oud-2.jpg" alt="Thumbnail 2" class="thumbnail" onclick="changeImage('images/royal-oud-2.jpg')">
+            <img src="images/royal-oud-3.jpg" alt="Thumbnail 3" class="thumbnail" onclick="changeImage('images/royal-oud-3.jpg')">
+          </div>
+        </div>
+
+        <div class="product-info">
+          <h2>Royal Oud</h2>
+          <p class="description">
+            A luxurious and captivating fragrance that embodies elegance and sophistication. Perfect for those who appreciate the finer things in life.
+          </p>
+          <p class="price">Price: PKR 5,000</p>
+          <button class="buy-button" onclick="showForm()">Buy Now</button>
+        </div>
+      </div>
+
+      <div class="form-container" id="formContainer">
+        <h3>Enter Your Details</h3>
+        <form id="orderForm">
+          <input type="text" id="name" placeholder="Full Name" required>
+          <input type="text" id="address" placeholder="Address" required>
+          <input type="text" id="cellphone" placeholder="Cellphone Number" required>
+          <label for="proofImage" class="file-upload">
+            <span>Upload Payment Proof (EasyPaisa Screenshot)</span>
+            <input type="file" id="proofImage" accept="image/*" required>
+          </label>
+          <button type="submit" class="submit-button">Submit Order</button>
+        </form>
+      </div>
+    </main>
+
+    <footer>
+      <p>Contact us: <a href="https://wa.me/923342610774" target="_blank">+92 334 2610774</a></p>
+    </footer>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
